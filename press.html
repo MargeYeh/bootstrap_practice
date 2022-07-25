@@ -1,14 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Press | CO</title>
+        <style>
+          * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+
+          /*Navigation Bar & Dropdown*/
+            header{
+                background-color: black;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            nav{
+              width: 100%;
+              height: 60px;
+            }
+
+            #nav-content{
+              float: right;
+            }
+
+            li a img{
+              width: 60px;
+              height: 5%;
+            }
+
+            ul{
+                list-style-type: none; /*Removes the circles*/
+                margin: 0; /*Gets rid of the indentation*/
+                padding: 0; /*Gets rid of the indentation*/
+                overflow: hidden;
+            }
+            li{
+                float: left; /*Moves the objects to line up to the left, that includes the drop down content*/
+                padding: 5px;
+            }
+            li a, .drop-btn{
+                display: inline-block;
+                color: white;
+                text-align: center; /*Centers each text in its box*/
+                padding: 14px 16px;
+                text-decoration: none; /*Removes the underline from the links*/
+            }
+            li a:hover, .drop-down:hover .drop-btn{
+                color: #918c84;
+            }
+            li.dropdown{
+                display: inline-block;
+            }
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+            }
+            .dropdown-content a{
+                color: white;
+                padding: 5px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                background-color: #e32626e0;
+            }
+            .dropdown-content a:hover{
+                color: #d3d3d3;
+            }
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+            
+            #order-online{
+              background-color: #e32626e0;
+              
+            }
+            #order-online:hover{
+              background-color: black;
+            }
+
+            /*Footer*/
+            footer{
+              background-color: black;
+              color: white;
+              height: 50px;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: fixed;
+              bottom: 0;
+              left: 0;
+              z-index: 100;
+            }
+
+            /*Banner*/
+
+            .banner{
+              /*Sizing*/
+              width: 100%;
+              height: 90vh;
+
+              /*Color tester*/
+              background-color: red;
+              
+              /*Flexbox*/
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              /*Background*/
+              background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.ajc.com/resizer/_qiS6hZaaL_J1I9LxBfqJGR02R0=/814x458/cloudfront-us-east-1.images.arcpublishing.com/ajc/TOJM5U3W5FGV77ASAQJE6NT5IM.jpg);
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+            }
+
+            .banner-inner{
+              text-align: center;
+              font-size: 5em;
+              color: white;
+            }
+
+        </style>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
     </head>
     <body>
-
-        
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="home.html"><img src="https://images.getbento.com/accounts/23237ff810e65dc174922ac5dc1342cb/media/accounts/media/LesCURaLS9qicjySCjAH_CO_logo.png" alt="co-logo.png" id="logo"/></a></li>
+            <div id="nav-content">
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Locations & Overview</a>
+                  <div class="dropdown-content">
+                    <a href="#">Overview</a>
+                    <a href="#">Charleston</a>
+                    <a href="#">Charlotte - Waverly</a>
+                    <a href="#">Charlotte - Park Road</a>
+                    <a href="#">Myrtle Beach</a>
+                    <a href="#">Raleigh</a>
+                    <a href="#">Savannah</a>
+                  </div>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="giftcards.html">Gift Cards</a></li>
+              <li><a href="press.html">Press</a></li>
+              <li><a href="orderonline.html" id="order-online">Order Online</a></li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="banner">
+          <!-- <img src="https://s3-media0.fl.yelpcdn.com/bphoto/no2QHRn7RqopNDU5RfB-Gw/348s.jpg" alt="banner-image"/> -->
+          <div class="banner-inner">
+            <h1><strong>Press</strong></h1>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <ul>
+          <li><a href="#store">Store</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#rewards-program">Rewards Program</a></li>
+        </ul>
+      </footer>
     </body>
 </html>
