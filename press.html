@@ -122,13 +122,56 @@
               background-size: cover;
               background-position: center center;
               background-repeat: no-repeat;
-              background-attachment: fixed;
+              /* background-attachment: fixed; */
             }
 
             .banner-inner{
               text-align: center;
               font-size: 5em;
               color: white;
+            }
+
+            /*Press Content*/
+            .press-content{
+              margin: 5% 15% 5% 15%;
+              text-align: center;
+            }
+
+            .press-content h1{
+              padding-bottom: 10%;
+            }
+
+            .press-grid{
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr;
+              gap: 60px 70px;
+            }
+
+            .article-content{
+              display: block;
+            }
+
+            .article-content h2{
+              padding: 15px;
+            }
+
+            .image-thumbnail{
+              height: 200px;
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+
+            /*Load More Button*/
+            #load-more-btn{
+              background-color: #e32626;
+              width: 125px;
+              height: 35px;
+              font-size: 1em;
+              color: white;
+              border: none;
+              border-radius: 5px;
             }
 
         </style>
@@ -161,11 +204,64 @@
         </nav>
       </header>
       <main>
+        <!--Banner Image-->
         <div class="banner">
           <!-- <img src="https://s3-media0.fl.yelpcdn.com/bphoto/no2QHRn7RqopNDU5RfB-Gw/348s.jpg" alt="banner-image"/> -->
           <div class="banner-inner">
-            <h1><strong>Press</strong></h1>
+            <h1>Press</h1>
           </div>
+        </div>
+        <!--Press Content-->
+        <div class="press-content">
+          <h1>PRESS</h1>
+          <div class="press-grid">
+            <div class="article-content">
+              <img src="https://54zexyd7o4z58ttz19dx11xa-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/CO-1068x1335.jpg" class="image-thumbnail">
+              <h2>SCOOP CHARLOTTE</h2>
+              <p>BEST TAKE OUT SUSHI IN CHARLOTTE | SCOOP</p>
+            </div>
+            <div class="article-content">
+              <img src="https://images.unsplash.com/photo-1510431198580-7727c9fa1e3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNvdXB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="image-thumbnail">
+              <h2>HOLY CITY SINNER</h2>
+              <p>CO CELEBRATES 8TH BIRTHDAY BY OFFERING SUSHI AT $8 ON JUNE 11TH</p>
+            </div>
+            <div class="article-content">
+              <img src="https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FsYWR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="image-thumbnail">
+              <h2>YELP</h2>
+              <p>THE HAPPIEST HOURS ON EARTH SAVANNAH - SAVANNAH</p>
+            </div>
+            <div class="article-content">
+              <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3VzaGl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="image-thumbnail">
+              <h2>CHARLESTON CITY PAPER</h2>
+              <p>WINTER 2020 RESTAURANT WEEK KICKS OFF THURS. JAN 9: HERE ARE YOUR BEST BETS</p>
+            </div>
+            <div class="article-content">
+              <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" class="image-thumbnail">
+              <h2>HOODLINE</h2>
+              <p>EXPLORE THE 3 TOP SPOTS IN CHARLOTTE'S FREEDOM PARK NEIGHBORHOOD</p>
+            </div>
+            <div class="article-content">
+              <img src="https://images.unsplash.com/photo-1512398975429-6ec18e1f3eb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="image-thumbnail">
+              <h2>YOUNG HUNGRY TRAVEL</h2>
+              <p>A VEGAN RESTAURANT GUIDE TO SAVANNAH, GEORGIA</p>
+            </div>
+            <div class="article-content">
+              <img src="https://images.unsplash.com/photo-1503764654157-72d979d9af2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" class="image-thumbnail">
+              <h1></h1>
+              <p>THE 23 BEST SOUPS IN CHARLOTTE - INCLUDING THE MONSTER BREAD SOUP FROM LINCOLN'S HABERDASHERY</p>
+            </div>
+            <div class="article-content">
+              <img src="https://images.unsplash.com/photo-1573806439793-82aa612294b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="image-thumbnail">
+              <h2>THRILLIST</h2>
+              <p>SLURP DOWN SOME NOODLES AT THESE CHARLESTONE RAMEN SPOTS</p>
+            </div>
+            <div class="article-content">
+              <img src="https://images.unsplash.com/photo-1611518040286-9af8ba97ab46?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" class="image-thumbnail">
+              <h2>CHARLESTONE CITY PAPER</h2>
+              <p>21 PLACES TO MARK WORLD VEGAN DAY IN CHARLESTON ON FRI. NOV. 1</p>
+            </div>
+          </div>
+          <button id="load-more-btn">Load More</button>
         </div>
       </main>
       <footer>
